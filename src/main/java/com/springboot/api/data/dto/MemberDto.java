@@ -1,2 +1,22 @@
-package com.springboot.api.data.dto;public class MemberDto {
+package com.springboot.api.data.dto;
+
+import lombok.Getter;
+import lombok.Setter;
+
+@Getter
+@Setter
+public class MemberDto {
+    private String name;
+    private String email;
+    private String organization;
+
+    @Override
+    public String toString() {
+        return "MemberDTO{" +
+                "name='" + name + '\'' +
+                ", email='" + email + '\'' +
+                ", organization='" + organization + '\'' +
+                '}';
+    }
 }
+
